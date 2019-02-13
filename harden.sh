@@ -3,8 +3,9 @@
 # all of this is cribbed from https://www.codelitt.com/blog/my-first-10-minutes-on-a-server-primer-for-securing-ubuntu/
 
 # knock knock housekeeping
-sudo apt update -y
-sudo apt upgrade -y
+sudo apt-get update
+sudo apt-get upgrade -y
+sudo apt-get dist-upgrade -y
 
 # install a firewall and do some basic smart things
 sudo sed -i s/IPV6=no/IPV6=yes/g /etc/default/ufw
